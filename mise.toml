@@ -1,0 +1,4 @@
+[tools]
+"aqua:cli/cli" = "latest"
+"aqua:pre-commit/pre-commit" = "latest"
+"aqua:sigstore/cosign" = "latest"
