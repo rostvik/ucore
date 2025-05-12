@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-dnf5 install -y tree
+dnf5 install -y podman-compose
 
-# rm /usr/etc/containers/policy.json /etc/containers/policy.json
-# rmdir /usr/etc{/containers,}
+
+systemctl enable komodo-paths-provision.service

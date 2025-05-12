@@ -1,0 +1,16 @@
+[Unit]
+# Based on https://github.com/moghtech/komodo/blob/main/scripts/setup-periphery.py
+Description=User agent to connect with Komodo Core
+
+[Service]
+Environment=PERIPHERY_PORT=8121
+Environment=DOCKER_HOST=unix:///var/run/user/1000/podman/podman.sock
+Environment=PERIPHERY_SSL_KEY_FILE=/opt/docker/komodo/periphery-user/key.pem
+Environment=PERIPHERY_SSL_CERT_FILE=/opt/docker/komodo/periphery-user/cert.pem
+Environment=PERIPHERY_ROOT_DIRECTORY=/opt/docker/komodo/periphery-user
+ExecStart=/usr/bin/periphery --config-path /opt/docker/komodo/periphery.config.toml
+Restart=on-failure
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target multi-user.target

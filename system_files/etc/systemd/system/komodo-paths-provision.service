@@ -1,0 +1,13 @@
+[Unit]
+Description=Komodo provision required paths on boot
+DefaultDependencies=no
+After=local-fs.target
+Before=auditd.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/usr/sbin/komodo-paths-provision.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=auditd.service

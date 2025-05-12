@@ -1,0 +1,8 @@
+[Network]
+Internal=false
+NetworkName=komodo-backend
+DisableDNS=false
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target komodo-core.service komodo-mongo.service
