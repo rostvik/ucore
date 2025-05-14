@@ -1,6 +1,8 @@
 [Unit]
 # Based on https://github.com/moghtech/komodo/blob/main/scripts/setup-periphery.py
 Description=Agent to connect with Komodo Core
+After=komodo-seed-config.service
+Requires=komodo-seed-config.service
 
 [Service]
 Environment=PERIPHERY_PORT=8120

@@ -1,5 +1,7 @@
 [Unit]
 Description=Komodo core
+After=komodo-seed-config.service
+Requires=komodo-seed-config.service
 
 [Container]
 Image=ghcr.io/moghtech/komodo-core:latest
