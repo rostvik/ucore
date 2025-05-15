@@ -2,3 +2,24 @@
 "aqua:cli/cli" = "latest"
 "aqua:pre-commit/pre-commit" = "latest"
 "aqua:sigstore/cosign" = "latest"
+"uv" = "latest"
+
+[settings]
+python.uv_venv_auto = true
+
+[env]
+PROJECT_NAME = "{{ config_root | basename }}"
+
+[tasks.install]
+description = "Install dependencies"
+alias = "i"
+run = "uv pip sync docs/requirements.txt"
+
+[tasks.build_deps]
+description = "Build dependencies"
+run = "uv pip compile docs/requirements.in --universal --output-file docs/requirements.txt"
+
+[tasks.docs]
+description = "Serve docs"
+alias = "docs"
+run = "mkdocs serve"
