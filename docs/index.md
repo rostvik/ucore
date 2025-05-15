@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+# uCore
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This setup builds on top of the [HCI tag](https://github.com/ublue-os/ucore#ucore-hci) to bring extra features to the OS.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Komodo](https://komo.do/), a service to bring some of the joys of gitops to a docker/podman compose setup
+- 1Password, using op (onepassword cli) to inject secrets into config files and services
