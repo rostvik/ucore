@@ -6,9 +6,6 @@ This repo sets up Systemd services for the Komodo backend in both rootless and r
 
 Komodo is running with the default database choice, MongoDB. This runs as a Quadlet[^1]
 
-[^1]:
-  [Quadlet](https://www.redhat.com/en/blog/quadlet-podman) is a way to define, manage and run a podman container as a systemd service.
-
 ```ini title="komodo-mongo.container"
 --8<-- "system_files/etc/containers/systemd/komodo-mongo.container"
 ```
@@ -50,3 +47,6 @@ The Core is the component that ties it all together, providing the UI as well as
 ```
 
 The same `komodo-seed-config.service` is set as a dependency, to template out the core config file, telling it about the database and other settings that you might hide.
+
+[^1]:
+  [Quadlet](https://www.redhat.com/en/blog/quadlet-podman) is a way to define, manage and run a podman container as a systemd service.
