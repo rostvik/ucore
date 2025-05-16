@@ -4,7 +4,8 @@ set -ouex pipefail
 
 dnf5 install -y \
   1password-cli \
-  vim
+  vim \
+  zsh
 
 
 systemctl enable komodo-paths-provision.service
