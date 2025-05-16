@@ -18,6 +18,9 @@ systemctl enable --now --user podman.socket
 sudo systemctl enable komodo-periphery.service
 systemctl enable --user komodo-periphery.service
 
+# Enable and log in to Tailscale
+sudo systemctl enable --now tailscaled.service
+sudo tailscale login
 
 # Reboot for services to take effect in order
 sudo systemctl reboot
