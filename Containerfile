@@ -23,7 +23,6 @@ COPY --from=eza /eza/*/etc/* /etc
 COPY --from=eza /eza/*/share/* /usr/local/share/
 
 COPY --from=fzf /fzf/*/bin/* /usr/bin
-COPY --from=fzf /fzf/*/etc/* /etc
 COPY --from=fzf /fzf/*/share/* /usr/local/share/
 
 COPY --from=hishtory /hishtory/*/bin/* /usr/bin
