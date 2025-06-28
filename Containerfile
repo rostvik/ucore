@@ -10,7 +10,7 @@ FROM ghcr.io/homebrew/core/hishtory:0.335@sha256:0d727ca130f82f59a9a014024dee75b
 FROM ghcr.io/homebrew/core/oh-my-posh:25.23.0@sha256:70c09a6543a10d48404843e7d3d80473dd46e62e4a899cca24a4b2cffa92c52e AS omp
 
 
-FROM ghcr.io/ublue-os/ucore-hci:stable-zfs-20250510@sha256:f7251b717c69d93ec7a99c65544e30a01dc38c3f1c0fca3d71173172a33d1f78
+FROM ghcr.io/ublue-os/ucore-hci:stable-20250628@sha256:0b95639cd70b55b3ec59bd9af1b726c8ea73198e088d1caef9e306d9a22e8f53
 
 COPY --from=komodo /periphery /usr/bin/periphery
 
