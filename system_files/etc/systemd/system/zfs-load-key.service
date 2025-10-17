@@ -1,0 +1,12 @@
+[Unit]
+Description=Load spicy encryption keys
+After=zfs-mount.service systemd-user-sessions.service
+Requires=network-online.target
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=op document get --out-file /run/zfs-hex "uCore\sZFS"
+ExecStart=zfs load-key -r tank
+ExecStartPost=zfs mount tank/spicy
