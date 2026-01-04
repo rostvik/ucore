@@ -3,7 +3,7 @@ COPY build_files /
 
 FROM ghcr.io/moghtech/komodo-binaries:1.19.5-x86_64@sha256:b2ee71bdf0fe51fc9d1195a4c88e2e1dafbe6bf3388c448d73e829191aecdd54 AS komodo
 
-FROM ghcr.io/homebrew/core/chezmoi:2.62.4@sha256:5fb260b65b77f69956a0a85e5be44558c8c1b87b05fd4e3197bfc7fc9033ad12 AS chezmoi
+FROM ghcr.io/homebrew/core/chezmoi:2.68.1@sha256:cbc62ff25645f8926baad6ce4197ce2f7da1adbf257a36981067cc4fa51ba634 AS chezmoi
 FROM ghcr.io/homebrew/core/eza:0.23.4@sha256:5cfca0bef2c6218ca1901e8b7f85e316799e12ae29d37391de1708e52658f943 AS eza
 FROM ghcr.io/homebrew/core/fzf:0.67.0@sha256:8f4784390b50c25b7450e0630d256e035085b08cf99fa4254b17eb822826873f AS fzf
 FROM ghcr.io/homebrew/core/hishtory:0.335@sha256:0d727ca130f82f59a9a014024dee75bc5ef64f315f2692604ba68952491c9194 AS hishtory
