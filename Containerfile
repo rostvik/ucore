@@ -1,7 +1,7 @@
 FROM scratch AS ctx
 COPY build_files /
 
-FROM ghcr.io/moghtech/komodo-binaries:1.17.5-x86_64@sha256:bdb0b7f20de878e9a8d256e85c6a193a89ff1826452cf88590cc3b2cd3bd5d34 AS komodo
+FROM ghcr.io/moghtech/komodo-binaries:1.19.5-x86_64@sha256:b2ee71bdf0fe51fc9d1195a4c88e2e1dafbe6bf3388c448d73e829191aecdd54 AS komodo
 
 FROM ghcr.io/homebrew/core/chezmoi:2.62.4@sha256:5fb260b65b77f69956a0a85e5be44558c8c1b87b05fd4e3197bfc7fc9033ad12 AS chezmoi
 FROM ghcr.io/homebrew/core/eza:0.21.3@sha256:8cc9e4eadb3a66c8b6e1eb1103d4af809001080c5d877d1ea0e7149b824dc437 AS eza
