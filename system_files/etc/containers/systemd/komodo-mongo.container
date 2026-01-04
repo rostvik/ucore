@@ -4,7 +4,7 @@ After=komodo-seed-config.service
 Requires=komodo-seed-config.service
 
 [Container]
-Image=docker.io/library/mongo:4
+Image=docker.io/library/mongo:8
 
 # Use volume and network defined below
 Volume=/opt/docker/komodo/mongo:/data/db:z
