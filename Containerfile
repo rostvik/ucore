@@ -5,7 +5,7 @@ FROM ghcr.io/moghtech/komodo-binaries:1.19.5-x86_64@sha256:b2ee71bdf0fe51fc9d119
 
 FROM ghcr.io/homebrew/core/chezmoi:2.68.1@sha256:cbc62ff25645f8926baad6ce4197ce2f7da1adbf257a36981067cc4fa51ba634 AS chezmoi
 FROM ghcr.io/homebrew/core/eza:0.23.4@sha256:5cfca0bef2c6218ca1901e8b7f85e316799e12ae29d37391de1708e52658f943 AS eza
-FROM ghcr.io/homebrew/core/fzf:0.67.0@sha256:8f4784390b50c25b7450e0630d256e035085b08cf99fa4254b17eb822826873f AS fzf
+FROM ghcr.io/homebrew/core/fzf:0.68.0@sha256:c8c2028f063b9bdfde9d39e524a231f0ebb2c1b764f5eb3416e00eb5c9295e0b AS fzf
 FROM ghcr.io/homebrew/core/hishtory:0.335@sha256:a33766673e5b3eee8902ab6541736511bdffc5c05acdd060736d649c3c09243f AS hishtory
 FROM ghcr.io/homebrew/core/oh-my-posh:28.10.0@sha256:55ede9732246d442b5cac0fb9c89583354117d192fad723ce83fd6c0fddf249c AS omp
 
