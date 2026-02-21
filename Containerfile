@@ -7,7 +7,7 @@ FROM ghcr.io/homebrew/core/chezmoi:2.68.1@sha256:cbc62ff25645f8926baad6ce4197ce2
 FROM ghcr.io/homebrew/core/eza:0.23.4@sha256:5cfca0bef2c6218ca1901e8b7f85e316799e12ae29d37391de1708e52658f943 AS eza
 FROM ghcr.io/homebrew/core/fzf:0.67.0@sha256:8f4784390b50c25b7450e0630d256e035085b08cf99fa4254b17eb822826873f AS fzf
 FROM ghcr.io/homebrew/core/hishtory:0.335@sha256:a33766673e5b3eee8902ab6541736511bdffc5c05acdd060736d649c3c09243f AS hishtory
-FROM ghcr.io/homebrew/core/oh-my-posh:28.10.0@sha256:55ede9732246d442b5cac0fb9c89583354117d192fad723ce83fd6c0fddf249c AS omp
+FROM ghcr.io/homebrew/core/oh-my-posh:29.5.0@sha256:0b3376ecf47e556cf1f00cb395e070edf82372d74ff5673d286756270bee8f3a AS omp
 
 
 FROM ghcr.io/ublue-os/ucore-hci:stable-20251017@sha256:db07025b630bfca55f4883111932aaf1ce8a33fe1c91f2e5fd4f083837d606a7
